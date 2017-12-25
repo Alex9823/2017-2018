@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Транслитератор</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<!-- Bootstrap Core CSS -->
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<style>
+	h1.header {
+	color:#E8DFC8;
+	}
+	.descr {
+	color: white
+	}
+	
+	p {font-size: 13pt}
+	
+	ul {list-style: none}
+	
+	li {margin-bottom: 10px}
+	
+	</style>
+	
+	</head>
+	<body>
+
+		<header style="background-color:#0cb98e; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br/><br/>
+						<h1 class="header">Англо-тайский словарь</h1>
+						<hr>
+						<p class="descr"><i>Введите слово в форму!</i></p> 
+	                </div>
+					<div class="col-md-4">
+        	           
+					</div>
+	            </div>
+			</div>
+		</header>
+
+		<section id="portfolio" style="background-image: url('img/cork-wallet.png');">
+			<div class="container" >
+				<div class="col-md-12" >
+				<br/><br/>
+				<form action="/translation" method="GET"  target="_blank">
+				<input type="text" name="input_word">
+				<input type="submit" value="Поиск в словаре">	
+				</form>		
+				<br/><br/>
+			</div>
+		</section>
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; "></p> 
+			</div>
+		</footer>	
+		
+	</body>
+</html>
