@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sentence generator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 
+  </head>
+  <body>
+    <h1>Sentence generator</h1>
+	<header class="page-header container">
+		<h1 class="row justify-content-center"></h1>
+	</header>
+	<main class="container">
+		<form action="/sentence_gen" method="POST" name="form" class="row justify-content-center" style="padding: 70px;">
+			<label for="input">Введите предложение:</label>
+			<input id="input" class="input" placeholder="Предложение" name="sentence" type="text"></input>
+			<input class="btn btn-primary" type="button" style="background: #E0FFFF; height:40px; width:120px; line-height:12px; color: #4682B4" value="Сгенерировать"  onclick="send_sentence();"></input>
+		</form>
+		<p id="answer" class="row justify-content-center" style="margin-top: -20px;"></p>
+	</main>
+	
+	
+		<!--third-party libs-->
+	<script src="{{ url_for('static', filename='js/libs/jquery-3.2.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/libs/popper.min.js') }}"></script>
+	<!--internal js-->
+	<script src="{{ url_for('static', filename='js/ajax.js') }}"></script>
+		<!--third-party libs-->
+	<script src="{{ url_for('static', filename='js/libs/jquery-3.2.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/libs/popper.min.js') }}"></script>
+	<!--internal js-->
+	<script src="{{ url_for('static', filename='js/ajax.js') }}"></script>
+
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
